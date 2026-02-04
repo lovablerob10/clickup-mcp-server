@@ -191,7 +191,7 @@ export class ClickUpService {
   // async updateTask(...) : Promise<ClickUpTask> { ... }
 
   // Get current user info which includes workspace information
-    async getTeams(): Promise<ClickUpTeam[]> {
+  async getTeams(): Promise<ClickUpTeam[]> {
     try {
       // Use the correct endpoint to get workspaces/teams
       const response = await this.client.get("/v2/team", {});
@@ -211,44 +211,45 @@ export class ClickUpService {
     }
   }
 
-  // Remove userId parameter
-  async getLists(folderId: string): Promise<ClickUpList[]> {
+  // Get workspace hierarchy (spaces, folders, lists)
+  async getWorkspaceHierarchy(teamId: string): Promise<any> {
     try {
-      // Interceptor will add auth header
-      const response = await this.client.get(
-        `/v2/folder/${folderId}/list`,
-        {},
+      logger.info(`Fetching hierarchy for team: ${teamId}`);
+      const spacesResponse = await this.client.get(`/v2/team/${teamId}/space?archived=false`);
+      const spaces = spacesResponse.data.spaces;
+
+      const hierarchy = await Promise.all(
+        spaces.map(async (space: any) => {
+          // Get folders in space
+          const foldersResponse = await this.client.get(`/v2/space/${space.id}/folder?archived=false`);
+          const folders = foldersResponse.data.folders;
+
+          // Get lists in space (not in folders)
+          const listsResponse = await this.client.get(`/v2/space/${space.id}/list?archived=false`);
+          const lists = listsResponse.data.lists;
+
+          const foldersWithLists = await Promise.all(
+            folders.map(async (folder: any) => {
+              const folderListsResponse = await this.client.get(`/v2/folder/${folder.id}/list?archived=false`);
+              return {
+                ...folder,
+                lists: folderListsResponse.data.lists,
+              };
+            }),
+          );
+
+          return {
+            ...space,
+            folders: foldersWithLists,
+            lists: lists,
+          };
+        }),
       );
-      return response.data.lists;
+
+      return hierarchy;
     } catch (error) {
-      // ... existing error handling ...
-      if (error instanceof Error) {
-        logger.error(`Failed to get lists: ${error.message}`);
-      }
-      throw new Error("Failed to retrieve lists from ClickUp");
+      logger.error(`Error fetching hierarchy for team ${teamId}:`, error);
+      throw new Error("Failed to retrieve workspace hierarchy from ClickUp");
     }
   }
-
-  // Remove userId parameter
-  async createBoard(boardData: ClickUpBoard): Promise<ClickUpBoard> {
-    try {
-      // Interceptor will add auth header
-      const response = await this.client.post(
-        // Ensure space_id is present
-        `/v2/space/${boardData.space_id}/board`,
-        boardData,
-        {},
-      );
-      return response.data;
-    } catch (error) {
-      // ... existing error handling ...
-      if (error instanceof Error) {
-        logger.error(`Failed to create board: ${error.message}`);
-      }
-      throw new Error("Failed to create board in ClickUp");
-    }
-  }
-
-  // REMOVE View Methods if they were here, or ensure class ends correctly
-  // async getViews(...) { ... }
 }
