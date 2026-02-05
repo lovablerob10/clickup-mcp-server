@@ -252,4 +252,32 @@ export class ClickUpService {
       throw new Error("Failed to retrieve workspace hierarchy from ClickUp");
     }
   }
+
+  async getLists(folderId: string): Promise<ClickUpList[]> {
+    try {
+      const response = await this.client.get(`/v2/folder/${folderId}/list`, {});
+      return response.data.lists;
+    } catch (error) {
+      if (error instanceof Error) {
+        logger.error(`Failed to get lists: ${error.message}`);
+      }
+      throw new Error("Failed to retrieve lists from ClickUp");
+    }
+  }
+
+  async createBoard(boardData: ClickUpBoard): Promise<ClickUpBoard> {
+    try {
+      const response = await this.client.post(
+        `/v2/space/${boardData.space_id}/board`,
+        boardData,
+        {},
+      );
+      return response.data;
+    } catch (error) {
+      if (error instanceof Error) {
+        logger.error(`Failed to create board: ${error.message}`);
+      }
+      throw new Error("Failed to create board in ClickUp");
+    }
+  }
 }

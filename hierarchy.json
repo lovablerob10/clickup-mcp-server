@@ -1,0 +1,671 @@
+[
+  {
+    "id": "901312834269",
+    "name": "Gerenciamento Clientes",
+    "color": "#30a46c",
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": false,
+    "statuses": [
+      {
+        "id": "p901312834269_LcqZCMgd",
+        "status": "aberto",
+        "type": "open",
+        "orderindex": 0,
+        "color": "#ffffff"
+      },
+      {
+        "id": "p901312834269_YaJBoSQ4",
+        "status": "em progresso",
+        "type": "custom",
+        "orderindex": 1,
+        "color": "#e5484d"
+      },
+      {
+        "id": "p901312834269_DDeaSIzS",
+        "status": "revisão",
+        "type": "custom",
+        "orderindex": 2,
+        "color": "#f76808"
+      },
+      {
+        "id": "p901312834269_62hGuRdu",
+        "status": "aprovação",
+        "type": "custom",
+        "orderindex": 3,
+        "color": "#ffc53d"
+      },
+      {
+        "id": "p901312834269_WCbGZxsr",
+        "status": "finalizado",
+        "type": "closed",
+        "orderindex": 4,
+        "color": "#008844"
+      }
+    ],
+    "multiple_assignees": false,
+    "features": {
+      "due_dates": {
+        "enabled": true,
+        "start_date": true,
+        "remap_due_dates": true,
+        "remap_closed_due_date": false
+      },
+      "sprints": {
+        "enabled": true
+      },
+      "time_tracking": {
+        "enabled": true,
+        "harvest": false,
+        "rollup": false,
+        "default_to_billable": 2
+      },
+      "points": {
+        "enabled": false
+      },
+      "custom_items": {
+        "enabled": false
+      },
+      "wip_limits": {
+        "enabled": true
+      },
+      "check_unresolved": {
+        "enabled": true,
+        "subtasks": null,
+        "checklists": null,
+        "comments": null
+      },
+      "milestones": {
+        "enabled": true
+      },
+      "custom_fields": {
+        "enabled": true
+      },
+      "remap_dependencies": {
+        "enabled": true
+      },
+      "dependency_warning": {
+        "enabled": true
+      },
+      "status_pies": {
+        "enabled": false
+      },
+      "emails": {
+        "enabled": true
+      },
+      "scheduler_enabled": false,
+      "dependency_type_enabled": false,
+      "dependency_enforcement": {
+        "enforcement_mode": 0,
+        "enforcement_enabled": false
+      },
+      "reschedule_closed_dependencies": true
+    },
+    "archived": false,
+    "folders": [
+      {
+        "id": "901316473918",
+        "name": "Gestão de Onboarding",
+        "orderindex": 0,
+        "override_statuses": false,
+        "hidden": false,
+        "space": {
+          "id": "901312834269",
+          "name": "Gerenciamento Clientes"
+        },
+        "task_count": "1",
+        "archived": false,
+        "statuses": [],
+        "lists": [
+          {
+            "id": "901324526599",
+            "name": "sp HAUS",
+            "orderindex": 0,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 1,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473918",
+              "name": "Gestão de Onboarding",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526597",
+            "name": "Via BR Cenografia",
+            "orderindex": 2,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473918",
+              "name": "Gestão de Onboarding",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526598",
+            "name": "GT House",
+            "orderindex": 3,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473918",
+              "name": "Gestão de Onboarding",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526596",
+            "name": "Espaço Constru",
+            "orderindex": 4,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473918",
+              "name": "Gestão de Onboarding",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          }
+        ],
+        "permission_level": "create"
+      },
+      {
+        "id": "901316465410",
+        "name": "Gestão de Social Media",
+        "orderindex": 1,
+        "override_statuses": false,
+        "hidden": false,
+        "space": {
+          "id": "901312834269",
+          "name": "Gerenciamento Clientes"
+        },
+        "task_count": "40",
+        "archived": false,
+        "statuses": [],
+        "lists": [
+          {
+            "id": "901324514510",
+            "name": "sp HAUS",
+            "orderindex": 0,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 13,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316465410",
+              "name": "Gestão de Social Media",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "read"
+          },
+          {
+            "id": "901324514634",
+            "name": "Via BR Cenografia",
+            "orderindex": 2,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 4,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316465410",
+              "name": "Gestão de Social Media",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "read"
+          },
+          {
+            "id": "901324517019",
+            "name": "GT House",
+            "orderindex": 3,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 10,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316465410",
+              "name": "Gestão de Social Media",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "read"
+          },
+          {
+            "id": "901324526474",
+            "name": "Espaço Constru",
+            "orderindex": 4,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 12,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316465410",
+              "name": "Gestão de Social Media",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "read"
+          },
+          {
+            "id": "901324771638",
+            "name": "Backstage Grow",
+            "orderindex": 6,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 1,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316465410",
+              "name": "Gestão de Social Media",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "read"
+          }
+        ],
+        "permission_level": "read"
+      },
+      {
+        "id": "901316473884",
+        "name": "Gestão de Tráfego Pago",
+        "orderindex": 2,
+        "override_statuses": false,
+        "hidden": false,
+        "space": {
+          "id": "901312834269",
+          "name": "Gerenciamento Clientes"
+        },
+        "task_count": "33",
+        "archived": false,
+        "statuses": [],
+        "lists": [
+          {
+            "id": "901324526553",
+            "name": "sp HAUS",
+            "orderindex": 0,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 15,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473884",
+              "name": "Gestão de Tráfego Pago",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526552",
+            "name": "Via BR Cenografia",
+            "orderindex": 2,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 12,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473884",
+              "name": "Gestão de Tráfego Pago",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526554",
+            "name": "GT House",
+            "orderindex": 3,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 6,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473884",
+              "name": "Gestão de Tráfego Pago",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324526551",
+            "name": "Espaço Constru",
+            "orderindex": 4,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473884",
+              "name": "Gestão de Tráfego Pago",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901324771662",
+            "name": "Backstage Grow",
+            "orderindex": 5,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316473884",
+              "name": "Gestão de Tráfego Pago",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          }
+        ],
+        "permission_level": "create"
+      },
+      {
+        "id": "901316842694",
+        "name": "Gestão das Automações",
+        "orderindex": 4,
+        "override_statuses": false,
+        "hidden": false,
+        "space": {
+          "id": "901312834269",
+          "name": "Gerenciamento Clientes"
+        },
+        "task_count": "25",
+        "archived": false,
+        "statuses": [],
+        "lists": [
+          {
+            "id": "901325044225",
+            "name": "sp HAUS",
+            "orderindex": 0,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 15,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316842694",
+              "name": "Gestão das Automações",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901325044224",
+            "name": "Via BR Cenografia",
+            "orderindex": 2,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316842694",
+              "name": "Gestão das Automações",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901325044211",
+            "name": "GT House",
+            "orderindex": 3,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 6,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316842694",
+              "name": "Gestão das Automações",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901325044223",
+            "name": "Espaço Constru",
+            "orderindex": 4,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 0,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316842694",
+              "name": "Gestão das Automações",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          },
+          {
+            "id": "901325044221",
+            "name": "Backstage Grow",
+            "orderindex": 5,
+            "content": "",
+            "status": null,
+            "priority": null,
+            "assignee": null,
+            "task_count": 4,
+            "due_date": null,
+            "start_date": null,
+            "folder": {
+              "id": "901316842694",
+              "name": "Gestão das Automações",
+              "hidden": false,
+              "access": true
+            },
+            "space": {
+              "id": "901312834269",
+              "name": "Gerenciamento Clientes",
+              "access": true
+            },
+            "archived": false,
+            "override_statuses": false,
+            "permission_level": "create"
+          }
+        ],
+        "permission_level": "create"
+      }
+    ],
+    "lists": []
+  }
+]

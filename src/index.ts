@@ -112,6 +112,10 @@ import {
   handleCreateList,
 } from "./tools/list.tools.js";
 import { createBoardTool, handleCreateBoard } from "./tools/board.tools.js";
+import {
+  getWorkspaceHierarchyTool,
+  handleGetWorkspaceHierarchy,
+} from "./tools/hierarchy.tools.js";
 
 // Tool Schemas - REMOVE taskSchema definition if only used in task.tools.ts
 const commonIdDescription =
@@ -165,6 +169,7 @@ async function main() {
           deleteViewTool,
           getViewTasksTool,
           createListTool,
+          getWorkspaceHierarchyTool,
         },
       },
     };
@@ -264,6 +269,8 @@ async function main() {
               return await handleCreateBoard(clickUpService, args);
             case createListTool.name:
               return await handleCreateList(clickUpService, args);
+            case getWorkspaceHierarchyTool.name:
+              return await handleGetWorkspaceHierarchy(clickUpService, args);
 
             default:
               throw new Error(`Unknown tool: ${request.params.name}`);
